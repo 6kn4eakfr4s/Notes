@@ -23,3 +23,15 @@ Create a vector from values:
 ```C++
 {a, b};
 ```
+Swap two variables:
+```C++
+swap(a, b);
+```
+Swaping using XOR:
+```C++
+int x = 10, y = 20;
+x ^= y;  // x = 10 ^ 20
+y ^= x;  // y = 20 ^ (10 ^ 20) = 10
+x ^= y;  // x = (10 ^ 20) ^ 10 = 20
+// Now x=20, y=10
+```
