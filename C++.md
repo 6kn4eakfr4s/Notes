@@ -35,3 +35,12 @@ y ^= x;  // y = 20 ^ (10 ^ 20) = 10
 x ^= y;  // x = (10 ^ 20) ^ 10 = 20
 // Now x=20, y=10
 ```
+Removing a character in string:
+```C++
+string.erase(start, num)
+//Removes the next num characters starting at index start
+```
+Reversing a string:
+```C++
+reverse(str.begin(), str.end());
+```
