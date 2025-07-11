@@ -44,3 +44,7 @@ Reversing a string:
 ```C++
 reverse(str.begin(), str.end());
 ```
+Creating an array that is the same size as another existing array:
+```C++
+vector<int> b(a.size());
+```
