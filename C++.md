@@ -48,3 +48,17 @@ Creating an array that is the same size as another existing array:
 ```C++
 vector<int> b(a.size());
 ```
+Customizing Priority Queue:
+```C++
+class mycomparison {
+    public:
+        bool operator()(const pair<int, int>& lhs, const pair<int, int>& rhs) {
+            return lhs.second > rhs.second;
+        }
+};
+priority_queue<pair<int, int>, vector<pair<int, int>>, mycomparison> pri_que;
+```
+Priority queue calculates the value of !operator().
+Therefore, in this case, if !(lhs > rhs), which is lhs < rhs,
+lhs will be put on top, which creates a min heap.
+Therefore, smaller values will be popped first.
